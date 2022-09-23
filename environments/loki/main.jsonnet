@@ -54,5 +54,10 @@ loki + promtail + gateway {
     
     replication_factor: 3,
     consul_replicas: 1,
+
+    
   },
+
+  local kk = import "github.com/jsonnet-libs/k8s-libsonnet/1.22/main.libsonnet",
+  gateway_deployment+: kk.apps.v1.deployment.spec.withReplicas(1),
 }
