@@ -5,7 +5,7 @@
     "name": "environments/loki"
   },
   "spec": {
-    "apiServer": "https://127.0.0.1:56533",
+    "apiServer": "https://127.0.0.1:62897",
     "namespace": "loki",
     "resourceDefaults": {},
     "expectVersions": {}
